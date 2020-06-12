@@ -1,0 +1,22 @@
+.card-contanier{
+  margin: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  width: 320px;
+  height: 300px;
+  overflow: hidden;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+
+  &:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+
+  .bottom{
+    padding-top: 3px;
+    padding-left: 20px;
+    padding-right: 20px;
+    height: 100px;
+    overflow: hidden;
+  }
+}

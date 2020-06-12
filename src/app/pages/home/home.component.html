@@ -1,0 +1,13 @@
+<div class="big-container">
+  <h1>Youtube videos</h1>
+  <hr>
+  <div class="cards">
+    <app-video-card *ngFor="let video of videos" [video]="video"></app-video-card>
+  </div>
+  <div class="buttons">
+    <button (click)="getVideos()">
+      <span *ngIf="!_service.loading">More Videos</span>
+      <div *ngIf="_service.loading" class="lds-ring"><div></div><div></div><div></div><div></div></div>
+    </button>
+  </div>
+</div>

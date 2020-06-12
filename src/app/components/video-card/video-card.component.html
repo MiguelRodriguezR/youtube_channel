@@ -1,0 +1,9 @@
+<div class="card-contanier animate__animated animate__fadeIn" (click)="watchVideo()">
+  <div class="top">
+    <img [src]="video.thumbnails.medium.url" alt="">
+  </div>
+  <div class="bottom">
+    <h4 class="title">{{video.title}} - {{video.publishedAt | date }}</h4>
+    <div class="desc">{{video.description}}</div>
+  </div>
+</div>
